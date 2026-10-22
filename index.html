@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Sania 💕</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hearts"></div>
+
+<section id="hero" class="screen active">
+  <div class="bounce">🐻💗</div>
+  <h1 id="title">Hi, Sayang!</h1>
+  <p class="sub">Aku buat sesuatu untukmu 💕</p>
+  <div class="row"><button class="btn-yes" onclick="go(1)">Start ✨</button></div>
+</section>
+
+<section id="ask" class="screen">
+  <h2>Pertanyaan singkat…</h2>
+  <p style="font-size:1.4rem">Do you love me? 🥺</p>
+  <div class="row" id="askRow">
+    <button class="btn-yes" id="yes">Yes! 💖</button>
+    <button class="btn-no" id="no">No 💔</button>
+  </div>
+  <p class="sub" id="askMsg"></p>
+  <div class="nav" id="askNext" style="display:none">
+    <button class="btn-yes" onclick="go(2)">Lanjut 💕</button>
+  </div>
+</section>
+
+<section id="together" class="screen">
+  <h2>Kita sudah bersama selama</h2>
+  <div class="counter">
+    <div class="tile"><b id="d">0</b><span>days</span></div>
+    <div class="tile"><b id="h">0</b><span>hours</span></div>
+    <div class="tile"><b id="m">0</b><span>minutes</span></div>
+    <div class="tile"><b id="s">0</b><span>seconds</span></div>
+  </div>
+  <p class="sub">…dan akan terus berlangsung 💞</p>
+  <div class="nav">
+    <button class="btn-soft" onclick="go(1)">Kembali</button>
+    <button class="btn-yes" onclick="go(3)">Lanjut 💕</button>
+  </div>
+</section>
+
+<section id="reasons" class="screen">
+  <h2>Alasan aku mencintaimu</h2>
+  <p class="sub" style="margin-bottom:20px">Tap a card to flip it</p>
+  <div class="cards" id="cards"></div>
+  <div class="nav">
+    <button class="btn-soft" onclick="go(2)">Kembali</button>
+    <button class="btn-yes" onclick="go(4)">Lanjut 💕</button>
+  </div>
+</section>
+
+<section id="photos" class="screen">
+  <h2>Kenangan kita 📸</h2>
+  <p class="sub" style="margin-bottom:20px">Pencet photo untuk diperbesar</p>
+  <div class="gallery" id="gallery"></div>
+  <div class="nav">
+    <button class="btn-soft" onclick="go(3)">Kembali</button>
+    <button class="btn-yes" onclick="go(5)">Lanjut 💕</button>
+  </div>
+</section>
+
+<section id="note" class="screen">
+  <h2>Satu hal lagi…</h2>
+  <div class="envelope" id="env" title="Buka aku">💌</div>
+  <div class="letter" id="letter"></div>
+  <div class="nav">
+    <button class="btn-soft" onclick="go(4)">Kembali</button>
+    <button class="btn-yes" onclick="go(0)">Ulangi dari awal 🔁</button>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox"><img id="lightboxImg" alt=""></div>
+
+<div class="dots" id="dots"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
